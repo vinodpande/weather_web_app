@@ -15,8 +15,8 @@ export default function ListItem({}: Props) {
         alignItems: "center",
       }}
     >
-      <Col>
-        <TextLabel label="Udupi,Karnataka" className="city_name" />
+      <Col xs={4} md={3}>
+        <TextLabel label="Udupi, KA" className="city_name" />
       </Col>
 
       <Col
@@ -26,6 +26,8 @@ export default function ListItem({}: Props) {
           flexDirection: "row",
           alignItems: "center",
         }}
+        xs={4}
+        md={3}
       >
         <TextLabel label="31" className="temp" />
         <TextLabel label="Mostly Sunny" className="description" />
@@ -38,6 +40,8 @@ export default function ListItem({}: Props) {
           justifyContent: "flex-end",
           alignItems: "center",
         }}
+        xs={4}
+        md={2}
       >
         <MdFavoriteBorder color={"#FFF"} />
         <MdFavorite color={"#FFD639"} />

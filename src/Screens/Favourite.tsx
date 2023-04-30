@@ -5,9 +5,5 @@ import NotFound from "../component/notfound/NotFound";
 type Props = {};
 
 export default function Favourite({}: Props) {
-  return (
-    <div>
-      <NotFound />
-    </div>
-  );
+  return <NotFound />;
 }

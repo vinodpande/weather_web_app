@@ -6,7 +6,7 @@ type Props = {
 };
 
 const Container: React.FC<Props> = ({ children }) => {
-  return <div className="container">{children}</div>;
+  return <div className="container_">{children}</div>;
 };
 
 export default Container;
