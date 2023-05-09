@@ -10,7 +10,8 @@ type Props = {
     | "favourite_weather"
     | "list-description"
     | "list-city_name-fav"
-    | "list-city_name";
+    | "list-city_name"
+    | "temp-list";
 };
 
 const TextLabel: React.FC<Props> = ({ label = "Text", className }) => {

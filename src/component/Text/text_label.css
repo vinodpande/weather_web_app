@@ -16,6 +16,15 @@
   letter-spacing: 0;
   line-height: 75px;
 }
+.temp-list {
+  height: 38px;
+  color: #fff;
+  font-family: Roboto;
+  font-size: 32px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 38px;
+}
 .description {
   height: 21px;
   color: #fff;
@@ -34,7 +43,7 @@
   font-weight: 500;
   letter-spacing: 0;
   line-height: 21px;
-  margin-left: 30;
+  margin-left: 10px;
 }
 .favourite_weather {
   height: 15px;

@@ -41,13 +41,13 @@ const ListItem: React.FC<Props> = ({ data }) => {
         md={3}
       >
         <img
-          style={{ width: 36, height: 38, marginRight: 24 }}
+          style={{ width: 36, height: 38 }}
           src={`https://openweathermap.org/img/wn/${data?.icon}.png`}
           alt="icon"
         />
         <TextLabel
           label={Utils.getCelsius(data.temp).toString()}
-          className="temp"
+          className="temp-list"
         />
         <TextLabel label={data.description} className="list-description" />
       </Col>

@@ -114,10 +114,48 @@ export const WeatherSlice = createSlice({
         state.currentWeather.is_favourite = !state.currentWeather.is_favourite;
       }
     },
+
+    removeFavourities: (state) => {
+      const data = state.weathers
+        .filter((item) => item.is_recent === true)
+        .map((item) => {
+          return { ...item, is_favourite: false };
+        });
+      state.weathers = data;
+      // state.weathers.forEach((item, index) => {
+      //   if (item.is_favourite === true && item.is_recent === false) {
+      //     state.weathers.splice(index, 1);
+      //   } else {
+      //     state.weathers[index].is_favourite = false;
+      //   }
+      // });
+    },
+
+    removeRecentSearch: (state) => {
+      const data = state.weathers
+        .filter((item) => item.is_favourite === true)
+        .map((item) => {
+          return { ...item, is_recent: false };
+        });
+      console.log(data);
+      state.weathers = data;
+      // state.weathers.forEach((item, index) => {
+      //   if (item.is_favourite === false) {
+      //     state.weathers.splice(index, 1);
+      //   } else {
+      //     state.weathers[index].is_recent = false;
+      //   }
+      // });
+    },
   },
 });
 
 // Action creators are generated for each case reducer function
-export const { currentWeather, addToFavourite } = WeatherSlice.actions;
+export const {
+  currentWeather,
+  addToFavourite,
+  removeFavourities,
+  removeRecentSearch,
+} = WeatherSlice.actions;
 
 export default WeatherSlice.reducer;
