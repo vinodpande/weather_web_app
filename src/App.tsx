@@ -1,7 +1,7 @@
 import React from "react";
 import logo from "./logo.svg";
 import "./App.css";
-import Weather from "./Screens/Weather";
+import Weather from "./Screens/weather/Weather";
 import Favourite from "./Screens/Favourite";
 import RecentSearch from "./Screens/RecentSearch";
 import Navigations from "./nav/Navigations";

@@ -1,0 +1,62 @@
+.container-button {
+  display: flex;
+  flex-direction: row;
+  height: 60px;
+  align-items: flex-end;
+  margin-left: 10px;
+}
+
+.button {
+  display: flex;
+  flex-direction: row;
+  height: 30px;
+  width: 28px;
+  background-color: transparent;
+  border-width: 1px;
+  border-radius: 0px;
+  border-color: #fff;
+  border-style: solid;
+  justify-content: center;
+}
+
+.buttonHighLight {
+  display: flex;
+  flex-direction: row;
+  height: 30px;
+  width: 28px;
+  background-color: #fff;
+  border-width: 1px;
+  border-radius: 1px;
+  border-color: #fff;
+  border-style: solid;
+  justify-content: center;
+}
+
+.text {
+  height: 19px;
+  color: #fff;
+  font-size: 16px;
+  line-height: 19px;
+  align-self: center;
+}
+
+.textHighLight {
+  height: 19px;
+  color: #e32843;
+  font-size: 16px;
+  line-height: 19px;
+  align-self: center;
+}
+
+.c-o {
+  height: 13px;
+  color: #fff;
+  font-size: 11px;
+  line-height: 13px;
+}
+.c-o-h {
+  height: 13px;
+  color: #e32843;
+  font-size: 11px;
+  line-height: 13px;
+}

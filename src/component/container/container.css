@@ -5,7 +5,7 @@
   padding-left: 100px;
   padding-right: 100px;
   background-image: url("../../assets/images/background.png");
-  background-size: cover;
+  background-size: 100% 100%;
   height: 100vh;
 }
 
@@ -16,7 +16,7 @@
   }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 412px) {
   .container_ {
     padding-left: 12px;
     padding-right: 12px;

@@ -3,7 +3,14 @@ import "./text_label.css";
 
 type Props = {
   label: string;
-  className: "city_name" | "temp" | "description";
+  className:
+    | "city_name"
+    | "temp"
+    | "description"
+    | "favourite_weather"
+    | "list-description"
+    | "list-city_name-fav"
+    | "list-city_name";
 };
 
 const TextLabel: React.FC<Props> = ({ label = "Text", className }) => {
