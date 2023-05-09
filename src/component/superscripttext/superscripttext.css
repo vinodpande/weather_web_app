@@ -1,0 +1,5 @@
+.super-script-containerstyle {
+  display: flex;
+  flex-direction: row;
+  margin-left: 4px;
+}

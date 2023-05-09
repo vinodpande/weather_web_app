@@ -1,10 +1,15 @@
 import React from "react";
-import ListItem from "../component/listItem/ListItem";
+import ListItem from "../../component/listItem/ListItem";
 import { useDispatch, useSelector } from "react-redux";
-import { RootState } from "../store/Store";
-import NotFound from "../component/notfound/NotFound";
+import { RootState } from "../../store/Store";
+import NotFound from "../../component/notfound/NotFound";
 import { Col, Row } from "react-bootstrap";
-import { removeFavourities, removeRecentSearch } from "../store/WeatherSlice";
+import {
+  removeFavourities,
+  removeRecentSearch,
+} from "../../store/WeatherSlice";
+
+import "./recentsearch.css";
 
 type Props = {};
 
@@ -21,33 +26,15 @@ export default function RecentSearch({}: Props) {
     <>
       {weathers.length > 0 ? (
         <>
-          <Row
-            style={{
-              justifyContent: "space-between",
-              alignItems: "center",
-              marginTop: "10px",
-            }}
-          >
-            <Col
-              xs={10}
-              md={10}
-              style={{
-                color: "#FFF",
-                fontSize: 13,
-              }}
-            >
+          <Row className="recent_search_row">
+            <Col xs={10} md={10} className="recent_search_first_text">
               You recently Search for
             </Col>
 
             <Col
               xs={2}
               md={2}
-              style={{
-                color: "#FFF",
-                fontSize: 13,
-                display: "flex",
-                justifyContent: "flex-end",
-              }}
+              className="recent_search_sec_text"
               onClick={() => dispatch(removeRecentSearch())}
             >
               Remove all

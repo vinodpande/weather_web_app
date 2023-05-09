@@ -1,77 +1,105 @@
 .city_name {
   height: 24px;
   color: #fff;
-  font-family: Roboto;
   font-size: 20px;
   font-weight: 500;
   letter-spacing: 0;
   line-height: 24px;
+  font-family: "Roboto-Regular";
 }
 .temp {
   height: 75px;
   color: #fff;
-  font-family: Roboto;
   font-size: 64px;
   font-weight: 500;
   letter-spacing: 0;
   line-height: 75px;
+  font-family: "Roboto-Regular";
 }
 .temp-list {
   height: 38px;
   color: #fff;
-  font-family: Roboto;
   font-size: 32px;
   font-weight: 500;
   letter-spacing: 0;
   line-height: 38px;
+  font-family: "Roboto-Regular";
 }
 .description {
   height: 21px;
   color: #fff;
-  font-family: Roboto;
   font-size: 18px;
   font-weight: 500;
   letter-spacing: 0;
   line-height: 21px;
+  font-family: "Roboto-Regular";
 }
 
 .list-description {
   height: 21px;
   color: #fff;
-  font-family: Roboto;
   font-size: 18px;
   font-weight: 500;
   letter-spacing: 0;
   line-height: 21px;
   margin-left: 10px;
+  font-family: "Roboto-Regular";
 }
+
 .favourite_weather {
   height: 15px;
   color: #fff;
-  font-family: Roboto;
   font-size: 13px;
   font-weight: 500;
   letter-spacing: 0;
   line-height: 15px;
   margin-left: 4px;
+  font-family: "Roboto-Regular";
 }
 
 .list-city_name {
   height: 19px;
   color: #fff;
-  font-family: Roboto;
   font-size: 16px;
   font-weight: 500;
   letter-spacing: 0;
   line-height: 19px;
+  font-family: "Roboto-Regular";
 }
 
 .list-city_name-fav {
   height: 19px;
   color: #ffe539;
-  font-family: Roboto;
   font-size: 16px;
   font-weight: 500;
   letter-spacing: 0;
   line-height: 19px;
+  font-family: "Roboto-Regular";
+}
+.super-script-o {
+  color: #fff;
+  font-size: 11px;
+  line-height: 10px;
+  font-family: "Roboto-Regular";
+}
+.super-script-text {
+  color: #fff;
+  font-size: 16px;
+  line-height: 22px;
+  font-family: "Roboto-Regular";
+}
+
+@media only screen and (max-width: 420px) {
+  .list-city_name {
+    font-size: 14px;
+  }
+  .list-city_name-fav {
+    font-size: 14px;
+  }
+  .list-description {
+    font-size: 14px;
+  }
+  .temp-list {
+    font-size: 14px;
+  }
 }

@@ -33,15 +33,11 @@ const Autocompelete = ({}: Props) => {
     <div style={{ position: "absolute" }}>
       <div className="rectangle">
         <input
+          className="inputebox"
           placeholder="Search city"
           type="text"
           value={inputValue}
           onChange={(e) => onTextChange(e)}
-          style={{
-            background: "transparent",
-            border: "none",
-            color: "#FFF",
-          }}
         />
         <IconSearch />
       </div>

@@ -5,6 +5,11 @@ select:focus {
   color: #fff;
   padding-left: 4px;
 }
+.inputebox {
+  background: transparent;
+  border: none;
+  color: #fff;
+}
 ::placeholder {
   /* Chrome, Firefox, Opera, Safari 10.1+ */
   color: #fff;

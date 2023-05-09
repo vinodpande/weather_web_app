@@ -59,25 +59,14 @@ const Weather = ({}: Props) => {
   console.log("currentWeather", currentWeather);
   return (
     <div style={{ display: "flex", flex: 1, flexDirection: "column" }}>
-      <Row
-        style={{
-          flex: 1,
-          flexDirection: "column",
-          alignItems: "center",
-          justifyContent: "center",
-        }}
-      >
+      <Row className={styles.weatherrow}>
         <TextLabel
           label={currentWeather.city + ", " + currentWeather.country}
           className="city_name"
         />
         <Row style={{ paddingLeft: 0 }}>
           <Col
-            style={{
-              display: "flex",
-              flexDirection: "row",
-              alignItems: "center",
-            }}
+            className={styles.weathercol}
             onClick={() => {
               dispatch(addToFavourite(currentWeather));
             }}
@@ -93,15 +82,9 @@ const Weather = ({}: Props) => {
       </Row>
 
       <Row style={{ flex: 3 }}>
-        <Col
-          style={{
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "center",
-          }}
-        >
+        <Col className={styles.weathercolthird}>
           <IconSunny name={currentWeather.icon} />
-          <div style={{ display: "flex", flexDirection: "row" }}>
+          <div className={styles.weatherrowNormal}>
             <TextLabel label={temp.toString()} className="temp" />
             <GroupButton onCalculateTemp={onCalculateTemp} />
           </div>

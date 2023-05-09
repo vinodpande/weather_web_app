@@ -8,3 +8,24 @@
 .marginRight {
   margin-right: 4px;
 }
+
+.weatherrow {
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.weathercol {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.weathercolthird {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.weatherrowNormal {
+  display: flex;
+  flex-direction: row;
+}

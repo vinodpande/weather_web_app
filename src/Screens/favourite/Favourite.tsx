@@ -1,11 +1,12 @@
 import { NOTFOUND } from "dns";
 import React from "react";
-import NotFound from "../component/notfound/NotFound";
+import NotFound from "../../component/notfound/NotFound";
 import { useDispatch, useSelector } from "react-redux";
-import { RootState } from "../store/Store";
-import ListItem from "../component/listItem/ListItem";
+import { RootState } from "../../store/Store";
+import ListItem from "../../component/listItem/ListItem";
 import { Col, Row } from "react-bootstrap";
-import { removeFavourities } from "../store/WeatherSlice";
+import { removeFavourities } from "../../store/WeatherSlice";
+import "./favourite.css";
 
 type Props = {};
 
@@ -22,33 +23,15 @@ export default function Favourite({}: Props) {
     <>
       {weathers.length > 0 ? (
         <>
-          <Row
-            style={{
-              justifyContent: "space-between",
-              alignItems: "center",
-              marginTop: "10px",
-            }}
-          >
-            <Col
-              xs={10}
-              md={10}
-              style={{
-                color: "#FFF",
-                fontSize: 13,
-              }}
-            >
+          <Row className="favourite_row">
+            <Col xs={10} md={10} className="favourite_first_text">
               {`${weathers.length} City added as favourite`}
             </Col>
 
             <Col
               xs={2}
               md={2}
-              style={{
-                color: "#FFF",
-                fontSize: 13,
-                display: "flex",
-                justifyContent: "flex-end",
-              }}
+              className="favourite_sec_text"
               onClick={() => dispatch(removeFavourities())}
             >
               Clear all

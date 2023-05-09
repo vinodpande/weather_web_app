@@ -11,7 +11,9 @@ type Props = {
     | "list-description"
     | "list-city_name-fav"
     | "list-city_name"
-    | "temp-list";
+    | "temp-list"
+    | "super-script-o"
+    | "super-script-text";
 };
 
 const TextLabel: React.FC<Props> = ({ label = "Text", className }) => {

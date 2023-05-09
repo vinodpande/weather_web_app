@@ -1,0 +1,23 @@
+.listitemrow {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.listitemcol {
+  justify-content: "flex-start";
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.listitemimg {
+  width: 36px;
+  height: 38px;
+}
+
+.listitemcolend {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}

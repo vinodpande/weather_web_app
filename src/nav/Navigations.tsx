@@ -1,7 +1,7 @@
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import Weather from "../Screens/weather/Weather";
-import RecentSearch from "../Screens/RecentSearch";
-import Favourite from "../Screens/Favourite";
+import RecentSearch from "../Screens/recent_search/RecentSearch";
+import Favourite from "../Screens/favourite/Favourite";
 import NavBar from "./NavBar";
 
 type Props = {};

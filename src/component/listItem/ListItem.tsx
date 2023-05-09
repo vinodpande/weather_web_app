@@ -1,5 +1,4 @@
 import React from "react";
-
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import TextLabel from "../Text/TextLabel";
@@ -7,6 +6,8 @@ import { MdFavoriteBorder, MdFavorite } from "react-icons/md";
 import { WeatherState, addToFavourite } from "../../store/WeatherSlice";
 import { Utils } from "../../Utils/Utils";
 import { useDispatch } from "react-redux";
+import style from "./listitem.module.css";
+import SuperScriptText from "../superscripttext/SuperScriptText";
 
 type Props = {
   data: WeatherState;
@@ -15,12 +16,7 @@ type Props = {
 const ListItem: React.FC<Props> = ({ data }) => {
   const dispatch = useDispatch();
   return (
-    <Row
-      style={{
-        justifyContent: "space-between",
-        alignItems: "center",
-      }}
-    >
+    <Row className={style.listitemrow}>
       <Col xs={4} md={3}>
         <TextLabel
           label={data.city + ", " + data.country}
@@ -30,18 +26,9 @@ const ListItem: React.FC<Props> = ({ data }) => {
         />
       </Col>
 
-      <Col
-        style={{
-          justifyContent: "flex-start",
-          display: "flex",
-          flexDirection: "row",
-          alignItems: "center",
-        }}
-        xs={4}
-        md={3}
-      >
+      <Col className={style.listitemcol} xs={6} md={6}>
         <img
-          style={{ width: 36, height: 38 }}
+          className={style.listitemimg}
           src={`https://openweathermap.org/img/wn/${data?.icon}.png`}
           alt="icon"
         />
@@ -49,18 +36,14 @@ const ListItem: React.FC<Props> = ({ data }) => {
           label={Utils.getCelsius(data.temp).toString()}
           className="temp-list"
         />
+        <SuperScriptText text="C" />
         <TextLabel label={data.description} className="list-description" />
       </Col>
 
       <Col
-        style={{
-          display: "flex",
-          flexDirection: "row",
-          justifyContent: "flex-end",
-          alignItems: "center",
-        }}
-        xs={4}
-        md={2}
+        className={style.listitemcolend}
+        xs={2}
+        md={1}
         onClick={() => dispatch(addToFavourite(data))}
       >
         {data.is_favourite ? (

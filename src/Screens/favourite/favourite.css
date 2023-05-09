@@ -1,0 +1,17 @@
+.favourite_row {
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+.favourite_first_text {
+  color: #fff;
+  font-size: 13px;
+  font-family: "Roboto-Regular";
+}
+.favourite_sec_text {
+  color: #fff;
+  font-size: 13px;
+  display: flex;
+  justify-content: flex-end;
+  font-family: "Roboto-Regular";
+}
